@@ -101,7 +101,36 @@ textarea {
 /* ==========================================================================
   Branden Dane custom styles n junk
    ========================================================================== */
+/**
+*** PRELOADER STYLES***/
+#preloader {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 999;
+    width:100%;
+    min-height: 100%;
+}
+#status {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('../img/status.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    background-size: cover;
+}
 
+/**
+*** END PRELOADER STYLES***/
 #dance {
     position: fixed; 
     display: block; 
