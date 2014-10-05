@@ -7,58 +7,164 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Its ur Birfday</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Happy Birthday Kamar. 25 and still going strong!">
+        <meta name="author" content="Branden Dane www.danetheory.com">
+        
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- Mobile Specific Metas
+================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
+
+<!-- CSS
+  ================================================== -->
+	
+	    <!--** Skeleton Responsive Default Stylesheets *******-->
+	        <link rel="stylesheet" href="stylesheets/Danium.css">
+	        <link rel="stylesheet" href="stylesheets/skeleton.css">
+	
+	    <!--*** FONTS =====================================*******-->
+	        <link rel="stylesheet" href="css/fonts/stylesheet.css">
+	
+	    <!-- HTML5 Boilerplate Default CSS and Main Custom CSS -->
+	        <link rel="stylesheet" href="css/global.css">
+	
+	    <!--*** jPlayer Hacked Circle Player Stylesheet *******-->
+	        <link rel="stylesheet" href="css/circle.player.css">
+	
+	    <!--** CSS3 Default Animations Stylesheet *******-->
+	        <link rel="stylesheet" href="css/animate.css">
+	
+	
+<!-- Polyfill/Vendor Fix Scripts
+================================================== -->
+	   <!--******* HTML5 Boilerplate Default Modernizr ***********-->
+	       <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	   
+	   <!--******* Skeleton HTML5 Shim **************************************************-->
+            <!--[if lt IE 9]>
+		        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	        <![endif]-->
+	
+<!-- Favicons
+================================================== -->
+	    <!--******* Skeleton Favicons Default Setup *************************************-->
+	        <link rel="shortcut icon" href="images/favicon.ico">
+	        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+<!-- JavaScript/JQuery Scripts
+================================================== -->
+        <!--******* HTML5 Boilerplate Default jQuery Call For Page ***************************-->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!--********************** HTML5 Boilerplate trick for page jQuery Scripting *****************************-->
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!-- HTML5 Boilerplate jQuery Plugins -->
+            <script src="js/plugins.js"></script>
+        <!-- HTML5 Boilerplate jQuery Plugins -->
+            <script src="js/main.js"></script>
+        <!--*** jPlayer Default Circle Player Scripts ************************-->
+            <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+		    <script type="text/javascript" src="js/jquery.grab.js"></script>
+		    <script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		    <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
+</head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <!--HTML5 Boilerplate Default Notification For IE7 Users To Update Browser-->
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            
 
-        
-        
+<!-- PRIMARY HTML/5 COMMENCE!
+================================================== -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
-        
-        <!-- Pre-loader -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
+    
+    <!-- jPlayer Necessary After Body Tag-->
+    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+
+    <!-- Pre-loader -->
+    <div id="preloader">
+        <div id="status">
+            <div id="loading-text">LOADING BRO<div id="dot">.....</div></div>
         </div>
+    </div>
 
-        
-        <!--Site Content-->
-        <div id="dance">
-            <div class="content">
-                    Happy Birthday K-Mart. One Love.<br>
-                    -B Dane. 
-            </div>
+    <!--Full-Width Background GIF-->
+    <div id="dance">
+                
+        <!--Happy Birthday Message-->
+        <div id="content" class="container">
+            <header>
+            <h1>Happy Birthday</h1><br>
+            <h1><span>Kamar</span></h1><br>
+            <h2>One Love.</h2><br>
+            <h2 class="behind">One Love.</h2><br>
+            <h4>-B Dane</h4>
+            </header>
         </div>
-        
-        
-        <!-- PRELOADER CUSTOM JS -->
-        <script type="text/javascript" src="../js/Preloader.js"></script>
-        
-        <!-- Google Analytics-->
-       <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+        <!--jPlayer Circle Player Hacked-->
+            <!--===== jPlayer Container ==========-->
+            <div id="cp_container_1" class="cp-container">
+                <div class="cp-buffer-holder"> 
+                    <div class="cp-buffer-1"></div>
+                    <div class="cp-buffer-2"></div>
+                </div><!--===== END: jPlayer Container ==========-->
+                
+                    <!--===== jPlayer Progress Bar =======-->
+                    <div class="cp-progress-holder"> 
+                        <div class="cp-progress-1"></div>
+                        <div class="cp-progress-2"></div>
+                    </div><!--===== END: jPlayer Progress Bar =======-->
+                
+                    <!--===== jPlayer Audio Controls =====-->
+                    <div class="cp-circle-control"></div>
+                        <ul class="cp-controls">
+                            <li>
+                                <a class="cp-play" tabindex="1">play</a>
+                            </li>
+				            <li>
+				                <a class="cp-pause" style="display:none;" tabindex="1">pause</a>
+				            </li>
+                        </ul><!--===== END: jPlayer Audio Controls =====-->
+            
+            </div><!--===== END: jPlayer Container ==========-->
+            <!--END: jPlayer Circle Player Hacked-->
+    
+    </div><!--END: Full-Width Background GIF-->
 
-      ga('create', 'UA-48443519-2', 'auto');
-        ga('send', 'pageview');
+                
+<!-- END OF PRIMARY HTML/5
+================================================== -->
+        
 
-    </script>
+<!-- FOOTER JS SCRIPTS COMMENCE!
+================================================== -->
+        
+        
+        <!--*** PRELOADER CUSTOM JS **************************************-->
+            <script type="text/javascript" src="../js/Preloader.js"></script>
+            
+        <!-- Fittext jQuery Plugin -->
+            <script src="js/jquery.fittext.js"></script>
+                <script>
+                  $("#content").fitText(3);
+                </script>
+        
+        <!--*** HACKED jPLAYER Circle JS *********************************-->
+            <script type="text/javascript" src="js/circle.player.js"></script>
+        
+        <!--*** Custom jPLAYER Circle Scipting ***************************-->
+            <script src="js/player.js"></script>
+        
+
+<!--*************************************************************************** GOOGLE ANALYTICS SNIPPET ***********************************************************************************-->
+<script> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)        [0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-48443519-2', 'auto'); ga('send', 'pageview');
+</script>
         
 <!--REMOVE BEFORE GOING LIVE-->
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':62182/autorefresh.js"></' + 'script>')</script>

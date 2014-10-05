@@ -1,0 +1,716 @@
+/*===================================================================================================================================================================================================================================
+*
+* Combination of Best Default Styling Practices Via The Responsive Framework Skeleton, And The Defacto HTML5 Boilerplate From The Awesome H5BP Team
+* 
+* CURRENT BUILD: 
+* =============> HTML5 Boilerplate v4.3.0  -  http://h5bp.com
+* =============> Skeleton v1.2             -  http://www.getskeleton.com/
+*
+*
+* Refactored By: Branden Dane - Full Stack Developer
+* Contact Email: Branden@DaneTheory.com
+* My Portfolio & Other Goodies Can Be Found At: 
+* =======> http://www.DaneTheory.com/ <========
+*                 
+*                 ;                                                                                                                 
+*                 ED.                                                                                   :                           
+*                 E#Wi                     L.                     ,;                             ,;    t#,                          
+*                 E###G.                   EW:        ,ft       f#i          .    .            f#i    ;##W.   j.                    
+*                 E#fD#W;               .. E##;       t#E     .E#t  GEEEEEEELDi   Dt         .E#t    :#L:WE   EW,        f.     ;WE.
+*                 E#t t##L             ;W, E###t      t#E    i#W,   ,;;L#K;;.E#i  E#i       i#W,    .KG  ,#D  E##j       E#,   i#G  
+*                 E#t  .E#K,          j##, E#fE#f     t#E   L#D.       t#E   E#t  E#t      L#D.     EE    ;#f E###D.     E#t  f#f   
+*                 E#t    j##f        G###, E#t D#G    t#E :K#Wfff;     t#E   E#t  E#t    :K#Wfff;  f#.     t#iE#jG#W;    E#t G#i    
+*                 E#t    :E#K:     :E####, E#t  f#E.  t#E i##WLLLLt    t#E   E########f. i##WLLLLt :#G     GK E#t t##f   E#jEW,     
+*                 E#t   t##L      ;W#DG##, E#t   t#K: t#E  .E#L        t#E   E#j..K#j...  .E#L      ;#L   LW. E#t  :K#E: E##E.      
+*                 E#t .D#W;      j###DW##, E#t    ;#W,t#E    f#E:      t#E   E#t  E#t       f#E:     t#f f#:  E#KDDDD###iE#G        
+*                 E#tiW#G.      G##i,,G##, E#t     :K#D#E     ,WW;     t#E   E#t  E#t        ,WW;     f#D#;   E#f,t#Wi,,,E#t        
+*                 E#K##i      :K#K:   L##, E#t      .E##E      .D#;    t#E   f#t  f#t         .D#;     G#t    E#t  ;#W:  E#t        
+*                 E##D.      ;##D.    L##, ..         G#E        tt     fE    ii   ii           tt      t     DWi   ,KK: EE.        
+*                 E#t        ,,,      .,,              fE                :                                               t          
+*                 L:                                    ,                                                                           
+*
+*                                                 "Knock On The Sky And Listen To The Sound"
+*
+*
+*==================================================================================================================================================================================================================================*/
+
+
+/*** TABLE OF CONTENTS
+==================================================
+    1.) NORMALIZE AND MINIMAL FIXES             
+        // Edit Only If You Understand Why You Are Doing So.
+	
+    2.) GLOBAL, BASIC STYLING                   
+        // More Important Default Styling. Still Edit At Own Risk.
+	
+    3.) SITE STYLES                             
+        // Site Speciffic Styling. Editing This Area May Not Be Necessary. However, Do Not Overlook It.
+	
+    4.) TYPOGRAPHY                              
+        // Edit As Needed For Your Project. Font Sizing based off REM Initially, With Appropriate IE Fallback. More Cleanly Handles Site Sizing Using EM's.
+	
+    5.) LINKS                                   
+        // Basic Hyperlink Styling. Edit As Needed.
+	
+    6.) LISTS                                   
+        // CSS Based List Styles. VERY Minimal.
+	
+    7.) IMAGES                                  
+        // Basic Image Styling, Including Responsive Setup.
+	
+    8.) BUTTONS                                 
+        // Super Basic Button Styles. Edit As Needed.
+	
+    9.) FORMS                                   
+        // Pure CSS Form Styles. Just Bare Bones.
+    
+    10.) MISC.       
+        // Potpourri CSS
+
+
+
+
+/***  
+***      
+**   1.) NORMALIZE AND MINIMAL FIXES 
+*           (Thank You Eric Meyers!)
+=============================================================*/
+:root {
+font-size: 16px;
+}
+* {
+    margin:0; margin:0px; margin:0rem; margin:0em;
+    padding:0; padding:0px; padding:0rem; padding:0em;
+}
+audio, canvas, img, video {
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline; 
+}
+html {
+    font-size: 16px; font-size: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 0.16rem; font-size: 1em; /** Makes Converting PX's to REM's A Breeze **/ 
+    line-height: 1.4; line-height: 14px; line-height: 0.14rem;
+
+    
+}
+hr {
+    display: block;
+    height: 1px; height: 0.01rem;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 14px 0; margin: 0.14rem 0rem;
+    padding: 0px; padding: 0rem;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; 
+}
+body {
+    line-height: 14px; line-height: 0.14rem;
+    margin: 0px; margin: 0rem;
+}
+    /*** Browse Happy prompt ***/
+        .browsehappy {
+            margin: 3px 0; margin: 0.03rem 0rem;
+            background: #787878;
+            color: #e8e8e8;
+            padding: 3px 0; padding: 0.03rem 0rem;
+            }
+ol, ul {
+    list-style: none; 
+}
+blockquote, q {
+    quotes: none; 
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; 
+}
+    table {
+    border-collapse: collapse;
+    border-spacing: 0; 
+}
+
+/***  
+***      
+**   2.) GLOBAL, BASIC STYLING 
+*       
+=============================================================*/
+body {
+    background: #fff;
+    font-size: 16px; font-size: 0.16rem; /**  =16px *The Conversion Is That Simple.*  **/
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #787878;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+ }
+
+
+/***  
+***      
+**   3.) TYPOGRAPHY 
+*       
+=============================================================*/
+h1, h2, h3, h4, h5, h6 {
+    color: #cf2228;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: normal; 
+}
+h1 { 
+    font-size: 46px; font-size: 4.6rem; 
+    line-height: 50px; line-height: 0.50rem; 
+    margin-bottom: 14px; margin-bottom: 0.14rem;
+}
+h2 { 
+    font-size: 35px; font-size: 3.5rem; 
+    line-height: 40px; line-height: 0.40rem; 
+    margin-bottom: 10px; margin-bottom: 0.10rem;
+}
+h3 { 
+    font-size: 28px; font-size: 2.8rem; 
+    line-height: 34px; line-height: 0.34rem; 
+    margin-bottom: 8px; margin-bottom: 0.08rem;
+}
+h4 { 
+    font-size: 21px; font-size: 2.1rem; 
+    line-height: 30px; line-height: 0.30rem; 
+    margin-bottom: 4px; margin-bottom: 0.04rem;
+}
+h5 { 
+    font-size: 17px; font-size: 1.7rem; 
+    line-height: 24px; line-height: 0.24rem;
+}
+h6 { 
+    font-size: 14px; font-size: 1.4rem; 
+    line-height: 21px; line-height: 0.21rem;
+}
+.subheader { 
+    color: #e8e8e8; 
+}
+p, pre { 
+    margin: 0 0 20px 0;
+    margin: 0rem 0rem 0.20rem 0rem; 
+}
+p.lead { 
+    font-size: 21px; font-size: 0.21rem; 
+    line-height: 27px; line-height: 0.27rem; 
+    color: #e8e8e8; 
+}
+em { 
+    font-style: italic; 
+}
+b, strong { 
+    font-weight: bold; 
+    color: #787878; 
+}
+small { 
+    font-size: 80%; 
+}
+dfn {
+    font-style: italic;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+/*** Correct font family set oddly in IE 6, Safari 4/5, and Chrome. ***/
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+/*** Improve readability of pre-formatted text in all browsers. ***/
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/*** Address CSS quotes not supported in IE 6/7. ***/
+q {
+    quotes: none;
+}
+/*** Address `quotes` property not supported in Safari 4. ***/
+q:before, q:after {
+    content: '';
+    content: none;
+}
+blockquote, blockquote p { 
+    font-size: 17px; font-size: 0.17rem; 
+    line-height: 24px; line-height: 0.24rem; 
+    color: #787878; 
+    font-style: italic; 
+}
+blockquote { 
+    margin: 0 0 20px; margin: 0rem 0rem 0.20rem; 
+    padding: 9px 20px 0 19px; padding: 0.09rem 0.20rem 0rem 0.19rem; 
+    border-left: 1px solid #e8e8e8;
+    border-left: .01rem solid #e8e8e8;
+}
+blockquote cite { 
+    display: block;
+    font-size: 12px; font-size: 0.12rem;
+    color: #555; 
+}
+blockquote cite:before { 
+    content: "\2014 \0020"; 
+}
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { 
+    color: #555; 
+}
+hr { 
+    border: solid #e8e8e8; 
+    border-width: 1px 0 0; border-width: .01rem 0rem 0rem; 
+    clear: both; 
+    margin: 10px 0 30px; margin: 0.10rem 0rem 0.30rem;
+    height: 0; height:0rem;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+/***  
+***      
+**   4.) LINKS
+*       
+=============================================================*/
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+    font-weight: inherit; 
+}
+a, a:visited { 
+    color: #a31d22; 
+    text-decoration: none; 
+    outline: 0; 
+}
+a:hover, a:focus { 
+    color: #e82930; 
+}
+a:active, a:hover {
+    outline: 0;
+}
+p a, p a:visited { 
+    line-height: inherit; 
+}
+
+/***  
+***      
+**   5.) LISTS
+*       
+=============================================================*/
+ul, ol { 
+    margin-bottom: 20px; margin-bottom: 0.20rem;
+}
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+ul { 
+    list-style: none outside; 
+}
+ol { 
+    list-style: decimal; 
+}
+ol, ul.square, ul.circle, ul.disc { 
+    margin-left: 30px; margin-left: 0.30rem; 
+}
+ul.square { 
+    list-style: square outside; 
+}
+ul.circle { 
+    list-style: circle outside; 
+}
+ul.disc { 
+    list-style: disc outside; 
+}
+ul ul, ul ol, ol ol, ol ul { 
+    margin: 4px 0 5px 30px; margin: .04rem 0rem .05rem 0.30rem;
+    font-size: 90%;  
+}
+ul ul li, ul ol li, ol ol li, ol ul li { 
+    margin-bottom: 6px; margin-bottom: .06rem;  
+}
+li { 
+    line-height: 18px; line-height: 0.18rem; 
+    margin-bottom: 12px; margin-bottom: 0.12rem; 
+}
+ul.large li { 
+    line-height: 21px; line-height: 0.21rem;
+}
+li p { 
+    line-height: 21px; line-height: 0.21rem;
+}
+
+/***  
+***      
+**   6.) IMAGES
+*       
+=============================================================*/
+p img { 
+    margin:0px;
+    margin: 0rem; 
+}
+img.scale-with-grid {
+    max-width: 100%;
+    height: auto; 
+}
+/*** 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+     2. Improve image quality when scaled in IE 7. ***/
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+/*** Correct overflow displayed oddly in IE 9. ***/
+svg:not(:root) {
+    overflow: hidden;
+}
+/*** Image replacement ***/
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+figure {
+    margin: 0;
+}
+
+/***  
+***      
+**   8.) BUTTONS
+*       
+=============================================================*/
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background: #eee; /* Old browsers */
+    background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
+    background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+    background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+    background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+    background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+    background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+    border: 1px solid #aaa;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -moz-border-radius: 3px; -moz-border-radius: 0.03rem;
+    -webkit-border-radius: 3px; -webkit-border-radius: 0.03rem;
+    border-radius: 3px; border-radius: 0.03rem;
+    color: #787878;
+    display: inline-block;
+    font-size: 11px; font-size: 0.11rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, .75);
+    cursor: pointer;
+    margin-bottom: 20px; margin-bottom: 0.20rem;
+    line-height: normal;
+    padding: 8px 10px; padding: 0.08rem 0.10rem;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    color: #000000;
+    background: #e8e8e8; /* Old browsers */
+    background: #e8e8e8 -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
+    background: #e8e8e8 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
+    background: #e8e8e8 -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
+    background: #e8e8e8 -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
+    background: #e8e8e8 -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
+    background: #e8e8e8 linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
+    border: 1px solid #787878;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa; 
+}
+.button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+    border: 1px solid #666;
+    background: #ccc; /* Old browsers */
+    background: #ccc -moz-linear-gradient(top, rgba(255,255,255,.35) 0%, rgba(10,10,10,.4) 100%); /* FF3.6+ */
+    background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.35)), color-stop(100%,rgba(10,10,10,.4))); /* Chrome,Safari4+ */
+    background: #ccc -webkit-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: #ccc -o-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* Opera11.10+ */
+    background: #ccc -ms-linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* IE10+ */
+    background: #ccc linear-gradient(top, rgba(255,255,255,.35) 0%,rgba(10,10,10,.4) 100%); /* W3C */ 
+}
+.button.full-width, button.full-width, input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center; 
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/***  
+***      
+**   9.) FORMS
+*       
+=============================================================*/
+form {
+    margin-bottom: 20px; margin-bottom: 0.20rem; 
+}
+fieldset {
+    border: 0px; border: 0rem;
+    margin: 0px; margin: 0rem;
+    padding: 0px; padding: 0rem;
+}
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    border: 1px solid #ccc;
+    padding: 6px 4px; padding: 0.06rem 0.04rem;
+    outline: none;
+    -moz-border-radius: 2px; -moz-border-radius: 0.02rem;
+    -webkit-border-radius: 2px;  -webkit-border-radius: 0.02rem;
+    border-radius: 2px; border-radius: 0.02rem;
+    font-size: 13px; font-size: .13rem;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #787878;
+    margin: 0px; margin: 0rem;
+    width: 210px; width: 2.10rem;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px; margin-bottom: 0.20rem;
+    margin-bottom: 20px; margin-bottom: 0.20rem;
+    background: #fff; 
+}
+select {
+    padding: 0px; padding: 0rem; 
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 1px solid #aaa;
+    color: #cf2228;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+    box-shadow:  0 0 3px rgba(0,0,0,.2); 
+}
+textarea {
+    resize: vertical;
+}
+label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 13px; font-size: 0.13rem;  
+}
+select {
+    width: 220px; width: 2.20rem; 
+}
+input[type="checkbox"] {
+    display: inline; 
+}
+label span, legend span {
+    font-weight: normal;
+    font-size: 13px; font-size: .13rem;
+    color: #555; 
+}
+
+/***  
+***      
+**   10.) MISC.
+*       
+=============================================================*/
+.remove-bottom { 
+    margin-bottom: 0px !important; margin-bottom: 0rem !important;
+}
+.half-bottom { 
+    margin-bottom: 10px !important; margin-bottom: .10rem !important; 
+}
+.add-bottom { 
+    margin-bottom: 20px !important; margin-bottom: .20rem !important; 
+}
+
+/*** Hide from both screenreaders and browsers ***/
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*** Hide only visually, but have it available for screenreaders***/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*** Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard ***/
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*** Hide visually and from screenreaders, but maintain layout ***/
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+/*** For IE 6/7 only. Include this rule to trigger hasLayout and contain floats. ***/
+.clearfix {
+    *zoom: 1;
+}
+/*** Address styling not present in IE 7/8/9, Firefox 3, and Safari 4. Known issue: no IE 6 support. ***/
+
+[hidden] {
+    display: none;
+}
+/*** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. ***/
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+
+
+
+/***  
+***      
+**   11.) MEDIA QUERY EXAMPLE. NOT MOBILE FIRST.
+*         DEFAULT IS COMMENTED OUT FOR PERSONAL REVIEW.
+=============================================================*/
+/*
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+/*    }
+
+    @media print,
+           (-o-min-device-pixel-ratio: 5/4),
+           (-webkit-min-device-pixel-ratio: 1.25),
+           (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+/*        }
+
+
+        /* #Media Queries Via Skeleton v1.2
+        ================================================== */
+
+	        /* Smaller than standard 960 (devices and browsers) */
+	        @media only screen and (max-width: 959px) {}
+
+	        /* Tablet Portrait size to standard 960 (devices and browsers) */
+	        @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	        /* All Mobile Sizes (devices and browser) */
+	        @media only screen and (max-width: 767px) {}
+
+	        /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	        @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	        /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	        @media only screen and (max-width: 479px) {}
+
+
+/***  
+***      
+**   12.) PRINT STYLE. INLINED TO AVOID 
+*         REQUIRED HTTP CONNECTION. MAY NEED REVIEW.
+=============================================================*/
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
